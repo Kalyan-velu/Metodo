@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
+    './src/*.{html,js}',
     './src/**/*.{html,js}',
     './*.{html,js}',
   ],
@@ -35,8 +36,8 @@ module.exports = {
       translate: {
         '10': '10%',
         '20': '20%',
-        '70':'70%',
-        '75':'75%'
+        '70': '70%',
+        '75': '75%'
       },
       gridTemplateColumns: {
         // Simple 16 column grid
@@ -44,13 +45,13 @@ module.exports = {
 
         // Complex site-specific column configuration
         'footer': '200px minmax(900px, 1fr) 100px',
-        'hero-lg':'repeat(2,1fr)',
-        'hero-md':'repeat(1,1fr)'
+        'hero-lg': 'repeat(2,1fr)',
+        'hero-md': 'repeat(1,1fr)'
       }
     }
   },
   plugins: [
     require('@tailwindcss/typography'),
-    // ...
+    require('@tailwindcss/forms'),
   ],
 }
