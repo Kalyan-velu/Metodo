@@ -1,11 +1,19 @@
-@import url(./utilities.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply h-[screen] w-[100%] bg-pink;
+#app {
+  @apply h-[screen] w-[100%];
 }
+
 a {
-  @apply underline  delay-75 cursor-pointer decoration-pink;
+  @apply delay-75 cursor-pointer;
+}
+
+a.active {
+  @apply text-[#ffff];
+}
+
+.nav {
+  @apply w-[100%] fixed top-0 transition-opacity duration-300 opacity-0;
 }

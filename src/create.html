@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Create task</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" crossorigin="anonymous" href="../public/styles/index.css">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Create task</title>
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+  <link crossorigin="anonymous" href="../public/styles/index.css" rel="stylesheet">
 </head>
 <body id="app">
-   <nav id="navbar" class="w-[100%] z-999"></nav>
-   
+<nav class="nav" id="navbar"></nav>
 
-   <div class="mt-24" style="margin-top: 5rem;">
-         <form action="">
-            hi
-         </form>
-      </div>
-   </div>
-   <script crossorigin="anonymous" type="module" defer src="../src/scripts/todo/index.js"></script>
-   <script crossorigin="anonymous" type="module" defer src="../index.js"></script>
+<section class="grid m-[70px] h-[calc(100%-70px)]">
+  <div>
+    <ul id="tasklist"></ul>
+  </div>
+  <div class="w-[100%] md:w-9/12 m-auto">
+    <!-- <form class="w-[100%] m-auto mt-0 mb-0" action=""> -->
+      <input type="text" placeholder="Add a new task" name="title" id="title">
+      <button id="add" type="button">Add</button>
+    <!-- </form> -->
+  </div>
+</section>
+<script crossorigin="anonymous" defer src="./scripts/todo/index.js" type="module"></script>
+<script crossorigin="anonymous" defer src="../index.js" type="module"></script>
 </body>
 </html>

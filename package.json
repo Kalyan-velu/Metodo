@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "npx serve"
+    "start": "npx serve --watch",
+    "build": "npx tailwindcss -i ./public/styles/styles.css -o ./public/styles/index.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.4",

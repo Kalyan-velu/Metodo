@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-   .text-color-a{
-      color: #eaeff0;
-   }
+@layer utilities {
+  .text-color-a {
+    color: #eaeff0;
+  }
+  .section-height {
+    height: calc(100% - 70px);
+  }
 }
